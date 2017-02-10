@@ -1,7 +1,7 @@
 ---
-layout: content
 title: Contact
-permalink: /contact/
+permalink: "/contact/"
+layout: content
 ---
 
 test
