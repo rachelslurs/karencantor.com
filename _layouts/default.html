@@ -16,7 +16,7 @@
      <!-- Dynamic content controller -->
     <core-ajax id="ajax" url="{{selectedPage.page.url}}" handleAs="document"
                on-core-response="{{onResponse}}"></core-ajax>
-    <site-scaffold label="Rachel Cantor" id="scaffold">
+    <site-scaffold label="Karen Cantor" id="scaffold">
       <div menu>
         <core-menu valueattr="hash" selected="{{route}}" selectedModel="{{selectedPage}}"
                on-core-select="{{menuItemSelected}}">
@@ -42,6 +42,12 @@
         </core-animated-pages>
       </div>
     </site-scaffold>
+    <!-- {% endraw %}
+
+    {% include footer.html %}
+
+    {% raw %} -->
+
     <script>
       (function() {
         "use strict";
@@ -54,10 +60,7 @@
 
         template.pages = [
           {name: 'About', hash: 'about', url: 'about'},
-          {name: 'Stack', hash: 'stack', url: 'stack'},
-          {name: 'Resume', hash: 'resume', url: 'resume'},
           {name: 'Blog', hash: 'blog', url: 'blog'},
-          {name: 'Bookmarks', hash: 'bookmarks', url: 'bookmarks'},
           {name: 'Contact', hash: 'contact', url: 'contact'}
         ];
 

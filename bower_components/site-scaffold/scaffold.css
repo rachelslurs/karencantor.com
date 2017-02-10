@@ -28,7 +28,7 @@ core-toolbar::shadow #bottomBar {
 }
 .flex.page-title > .bottom .main-label {
   padding: 0 0 20px 60px;
-  font-family: "aw-conqueror-carved-one", sans-serif;
+  font-family: Georgia, serif;
   text-transform: uppercase;
 }
 core-toolbar > .toolbar-tools > .main-label, core-toolbar > .main-label {
@@ -39,7 +39,7 @@ core-toolbar > .toolbar-tools > .main-label, core-toolbar > .main-label {
 
 }
 .top.main-label:first-child {
-  font-family: "aw-conqueror-carved-one", sans-serif;
+  font-family: Georgia, serif;
   font-size: 2rem;
   line-height: 1.8rem;
 }
@@ -125,7 +125,7 @@ polyfill-next-selector { content: '#drawerPanel:not([narrow]) .menuButton';}
   font-size: 24px;
   font-weight: 400;
   color: #1A237E;
-  font-family: "aw-conqueror-carved-one", sans-serif;
+  font-family: Georgia, serif;
 }
 
 #frame {

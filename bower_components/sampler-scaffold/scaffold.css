@@ -43,7 +43,7 @@ core-toolbar::shadow #bottomBar {
 
 }
 .main-label:first-child {
-  font-family: "aw-conqueror-carved-one", sans-serif;
+  font-family: Georgia, serif;
   font-size: 2rem;
   line-height: 1.8rem;
 }
@@ -130,7 +130,7 @@ polyfill-next-selector { content: '#drawerPanel:not([narrow]) .menuButton';}
   font-size: 24px;
   font-weight: 400;
   color: #1A237E;
-  font-family: "aw-conqueror-carved-one", sans-serif;
+  font-family: Georgia, serif;
 }
 
 #frame {
