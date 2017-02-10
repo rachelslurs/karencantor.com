@@ -1,6 +1,7 @@
 ---
 title: Monday Classes
 date: 2017-02-09 20:31:00 -05:00
+layout: post
 ---
 
 Last Monday, I started teaching 2 groups. One is at 1pm the other was at 6pm. I feel you must have a good strong foundation when teaching with the subjects of Healing, Psychic development and Unfolding of mediumship.
