@@ -30,11 +30,11 @@
   			{% endfor %}
         {% for link in site.links %}
           {% if page.title == 'Recommendations' %}
-            {% if post.layout == 'link' %}
+            {% if link.layout == 'link' %}
     					<paper-shadow class="outer-card" z="2" layout horizontal>
-    						<a href="{{ site.baseurl }}{{ post.url }}" target="_self">
+    						<a href="{{ site.baseurl }}{{ link.url }}" target="_self">
     							<paper-item class="card">
-    								<h3>{{ post.title }}</h3>
+    								<h3>{{ link.title }}</h3>
     							</paper-item>
     						</a>
     					</paper-shadow>
