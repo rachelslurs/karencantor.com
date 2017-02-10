@@ -5,4 +5,3 @@ layout: list
 ---
 
 {{content}}
-ok
