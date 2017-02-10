@@ -1,7 +1,7 @@
 ---
-layout: list
 title: Blog
-permalink: /blog/
+permalink: "/blog/"
+layout: list
 ---
 
 {{content}}
