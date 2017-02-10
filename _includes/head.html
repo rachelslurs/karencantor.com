@@ -1,0 +1,29 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<script src="//use.typekit.net/pvw5hkp.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+	<script src="{{ site.baseurl }}/bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="{{ site.baseurl }}/bower_components/site-scaffold/scaffold.html">
+
+	<link rel="import" href="{{ site.baseurl }}/bower_components/core-animated-pages/core-animated-pages.html">
+	<link rel="import" href="{{ site.baseurl }}/bower_components/core-ajax/core-ajax.html">
+	<link rel="import" href="{{ site.baseurl }}/bower_components/flatiron-director/flatiron-director.html">
+	<link rel="import" href="{{ site.baseurl }}/bower_components/core-animated-pages/transitions/slide-from-bottom.html">
+	<link rel="import" href="{{ site.baseurl }}/bower_components/core-icons/core-icons.html">
+	<link rel="import" href="{{ site.baseurl }}/bower_components/paper-fab/paper-fab.html">
+	<link rel="import" href="{{ site.baseurl }}/bower_components/paper-shadow/paper-shadow.html">
+	<link rel="import" href="{{ site.baseurl }}/bower_components/paper-item/paper-item.html">
+	<link rel="stylesheet" href="{{ site.baseurl }}/main.css" shim-shadowdom>
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+</head>

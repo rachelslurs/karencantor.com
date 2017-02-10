@@ -1,4 +1,5 @@
 ---
+layout: content
 title: About
 date: 2017-02-09 20:09:00 -05:00
 ---

@@ -1,0 +1,8 @@
+---
+layout: {{ layout }}
+title: {{ title }}
+client: {{ client }}
+tech: {{ tech }}
+press-1-title: {{ press-1-title }}
+press-1-link: {{ press-1-link }}
+---

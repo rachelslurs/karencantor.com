@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body unresolved>
+  	<section>
+  		<div horizontal layout wrap>
+			{% for post in site.posts %}
+				{% if page.title == 'Blog' %}
+					<paper-shadow class="outer-card" z="2" layout horizontal>
+						<a href="{{ site.baseurl }}{{ post.url }}" target="_self">
+							<paper-item class="card">
+								<h3>{{ post.title }}<p><small>{{ post.date | date: "%b %-d, %Y" }}</small></p></h3>
+							</paper-item>
+						</a>
+					</paper-shadow>
+				{% endif %}
+			{% endfor %}
+		</div>
+  	</section>
+  </body>
+</html>
