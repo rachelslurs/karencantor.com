@@ -1,6 +1,6 @@
 ---
 title: Links
-permalink: "/recommendations/"
+permalink: "/links/"
 layout: list
 ---
 
