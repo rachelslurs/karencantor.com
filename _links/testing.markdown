@@ -1,7 +1,7 @@
 ---
 title: Testing
 date: 2017-02-09 21:44:00 -05:00
-linkurl: google.com
+linkurl: http://www.google.com
 layout: link
 ---
 
