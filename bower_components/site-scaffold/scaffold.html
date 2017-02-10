@@ -10,10 +10,10 @@ Exampler:
       <core-item label="Radio" url="demos/radio.html"></core-item>
       <core-item label="Range" url="demos/range.html"></core-item>
       <core-item label="Color" url="demos/color.html"></core-item>
-    
+
     </site-scaffold>
 
-Use `label` to set the site label and `responsiveWidth` to change the layout 
+Use `label` to set the site label and `responsiveWidth` to change the layout
 of the scaffold.
 
 @element site-scaffold
@@ -35,7 +35,7 @@ of the scaffold.
       <core-header-panel id="mainHeaderPanel" drawer flex shadow class="{{ {'tall' : !narrow} | tokenList }}">
         <core-toolbar>
           <div class="top main-label fit">{{label}}</div>
-          <div class="bottom main-label fit">Front End Software Engineer</div>
+          <div class="bottom main-label fit">The Villages Healer</div>
         </core-toolbar>
         <content select="[menu]"></content>
       </core-header-panel>
@@ -52,7 +52,7 @@ of the scaffold.
   </template>
 <script>
   Polymer('site-scaffold', {
-    
+
     /**
      * site label.
      *
@@ -60,7 +60,7 @@ of the scaffold.
      * @type string
      */
       publish: {
-      
+
       /**
        * Width of the drawer panel.
        *
@@ -69,18 +69,18 @@ of the scaffold.
        * @default '256px'
        */
       drawerWidth: '256px',
-      
+
       /**
-       * When the browser window size is smaller than the `responsiveWidth`, 
-       * `core-drawer-panel` changes to a narrow layout. In narrow layout, 
+       * When the browser window size is smaller than the `responsiveWidth`,
+       * `core-drawer-panel` changes to a narrow layout. In narrow layout,
        * the drawer will be stacked on top of the main panel.
        *
        * @attribute responsiveWidth
        * @type string
        * @default '600px'
-       */    
+       */
       responsiveWidth: '600px',
-      
+
       /**
        * If true, position the drawer to the right. Also place menu icon to
        * the right of the content instead of left.
@@ -99,34 +99,34 @@ of the scaffold.
        * @default false
        */
       disableSwipe: false,
-  
+
       /**
        * Used to control the header and scrolling behaviour of `core-header-panel`
        *
        * @attribute mode
        * @type string
        * @default 'seamed'
-       */     
+       */
       mode: {value: 'seamed', reflect: true}
     },
-    
-    
+
+
     ready: function() {
       console.log('ready');
     },
-    
+
     domReady: function() {
       console.log('domready');
     },
 
-    
+
     detached: function() {
     },
 
     /**
      * Toggle the drawer panel
      * @method togglePanel
-     */    
+     */
     togglePanel: function() {
       this.$.drawerPanel.togglePanel();
     },
@@ -134,7 +134,7 @@ of the scaffold.
     /**
      * Open the drawer panel
      * @method openDrawer
-     */      
+     */
     openDrawer: function() {
       this.$.drawerPanel.openDrawer();
     },
@@ -142,7 +142,7 @@ of the scaffold.
     /**
      * Close the drawer panel
      * @method closeDrawer
-     */     
+     */
     closeDrawer: function() {
       this.$.drawerPanel.closeDrawer();
     },
@@ -155,11 +155,11 @@ of the scaffold.
     get scroller() {
       return this.$.headerPanel.scroller;
     },
-    
+
     scroll: function(e) {
       this.fire('scroll', {target: e.detail.target}, this, false);
     },
-    
+
     animateCard: function() {
       this.$.card.classList.remove('move-up');
       this.$.card.style.display = 'none';
@@ -172,20 +172,20 @@ of the scaffold.
         }, null, 300);
       });
     },
-    
+
     moveCard: function(y) {
       var s = this.$.card.style;
-      s.webkitTransform = s.transform = 
+      s.webkitTransform = s.transform =
           y ? 'translate3d(0, ' + y + 'px,0)' : '';
     },
-    
+
     cardTransitionDone: function() {
       if (this.$.card.classList.contains('move-up')) {
         this.$.card.classList.remove('move-up');
         this.updateFrameHeight();
       }
     }
-    
+
   });
 
 </script>
