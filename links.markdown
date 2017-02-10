@@ -1,5 +1,5 @@
 ---
-title: Recommendations
+title: Links
 permalink: "/recommendations/"
 layout: list
 ---
