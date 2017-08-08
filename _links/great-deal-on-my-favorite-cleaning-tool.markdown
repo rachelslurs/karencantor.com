@@ -1,6 +1,7 @@
 ---
 title: Great deal on my favorite cleaning tool
 date: 2017-08-08 19:08:00 -04:00
+linkurl: https://www.amazon.com/dp/B00SMLJPIC/ref=psdc_510112_t1_B00SMLJQ72?&_encoding=UTF8&tag=rachelslurs-20&linkCode=ur2&linkId=63fca7bb4c94d00e80cf9be549c6471d&camp=1789&creative=9325
 layout: link
 ---
 
